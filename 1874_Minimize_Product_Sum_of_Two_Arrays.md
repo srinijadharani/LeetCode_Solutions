@@ -1,9 +1,8 @@
 Python code:
 
 ```python
-function test() {
-  console.log("notice the blank line before this function?");
-}
+def minProductSum(self, nums1: List[int], nums2: List[int]) -> int:
+    return sum(x*y for x, y in zip(sorted(nums1), sorted(nums2, reverse = True)))
 ```
 Since this is a little too simple, here's the Java version:
 ```java
